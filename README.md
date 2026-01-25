@@ -20,12 +20,9 @@
 
 3. **Start the components:**
    ```powershell
-   # Start komorebi
-   komorebic start
-   
-   # Start hotkey daemon
-   whkd
+   # Start komorebi & hotkey daemon
+   komorebic start --whkd
    
    # Start status bar
-   yasb
+   yasbc start
    ```
