@@ -1,6 +1,10 @@
 watch_stylesheet: true
 watch_config: true
 debug: false
+glazewm:
+  start_command: "glazewm.exe start"
+  stop_command: "glazewm.exe command wm-exit"
+  reload_command: "glazewm.exe command wm-exit && glazewm.exe start"
 bars:
   status-bar:
     enabled: true
