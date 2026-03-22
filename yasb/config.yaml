@@ -36,6 +36,7 @@ bars:
           "disk",
           "traffic",
           "volume",
+          "glazewm_workspaces", 
           "settings",
           "notifications",
           "power_menu",
@@ -214,6 +215,28 @@ widgets:
         color: "#00000090"
         offset: [0, 2]
         radius: 8
+  glazewm_workspaces:
+    type: "glazewm.workspaces.GlazewmWorkspacesWidget"
+    options:
+      offline_label: "GlazeWM Offline"
+      hide_empty_workspaces: true
+      hide_if_offline: false
+      monitor_exclusive: true
+      enable_scroll_switching: true
+      btn_shadow:
+        enabled: false
+        color: "black"
+        radius: 4
+        offset: [ 1, 1 ]
+      app_icons: 
+        enabled_populated: false
+        enabled_active: false
+        size: 16
+        max_icons: 0
+        hide_label: false
+        hide_duplicates: false
+        hide_floating: false
+      animation: false
   cpu:
     type: "yasb.cpu.CpuWidget"
     options:
@@ -359,6 +382,7 @@ widgets:
       show_battery: false
       show_volume: false
       show_network: true
+      use_hook: true
   media:
     type: "yasb.media.MediaWidget"
     options:
